@@ -1,4 +1,9 @@
 package herongshen.rbac;
 
+import herongshen.rbac.view.MainView;
+
 public class Main {
+    public static void main(String[] args) {
+        MainView.show();
+    }
 }
