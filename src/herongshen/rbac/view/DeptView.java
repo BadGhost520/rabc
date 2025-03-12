@@ -37,8 +37,8 @@ public class DeptView {
                     // 删除部门
                     break;
                 default:
-                    System.out.println("输入非法，qingsh");
+                    System.out.println("输入非法，请输入正确的菜单编号！");
             }
-        }
+        } while (!"0".equals(menuChoice));
     }
 }
