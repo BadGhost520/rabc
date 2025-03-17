@@ -29,23 +29,11 @@ public class MainView {
             printMenu();
             menuChoice = input.nextLine();
             switch (menuChoice) {
-                case "0":
-                    System.out.println("成功退出系统，欢迎再次使用！");
-                    break;
-                case "1":
-                    // 部门管理
-                    DeptView.show();
-                    break;
-                case "2":
-                    // 角色管理
-                    RoleView.show();
-                    break;
-                case "3":
-                    // 用户管理
-                    UserView.show();
-                    break;
-                default:
-                    System.out.println("输入非法，请输入正确的菜单编号！");
+                case "0" -> System.out.println("成功退出系统，欢迎再次使用！");
+                case "1" -> DeptView.show();
+                case "2" -> RoleView.show();
+                case "3" -> UserView.show();
+                default -> System.out.println("输入非法，请输入正确的菜单编号！");
             }
         } while (!"0".equals(menuChoice));
         input.close();
